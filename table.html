@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        table,th,td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding:15px;
+        } 
+        th{
+            text-align:left;
+        }
+        table{
+            border-spacing:5px;
+        }
+        table#t09 tr:nth-child(even){
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <table style="width:100%" id="t09">
+        <caption>table details</caption>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th colspan="2">address</th>
+        </tr>
+        <tr>
+            <th rowspan="2">admin</th>
+            <td colspan="2">22</td>
+            <td>mumbaisdfasfsda</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Manager</td>
+            <td>23</td>
+            <td>Pune</td> 
+            <td>hello</td>
+        </tr>
+    </table>
+</body>
+</html>

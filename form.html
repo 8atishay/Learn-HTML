@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body><!--use method: post to hide data sent-->
+        <form action="list.html" method="post">
+            <fieldset>
+                <legend>user registration</legend>
+
+                Username:<br />
+                <input type="text" name="uname" autocomplete="off" /><br />
+                Password:<br />
+                <input type="password" name="pass" autofocus placeholder="password"/><br />
+                <input type="radio" name="gender" value="male" />Male<br />
+                <input type="radio" name="gender" value="female" checked />Female<br />
+                <select name="department" multiple size="2">
+                    <option value="IT">IT</option>
+                    <option value="HR" selected>HR</option>
+                    <option value="Operation">Operation</option>
+                    <option value="Admin">Admin</option>
+                </select><br />
+                About<br />
+                <textarea name="about" rows="10" cols="10">default</textarea><br>
+                <input list="browsers" name="browser" autocomplete="off"/>
+                <datalist id="browsers">
+                    <option value="IE" >hello</option>
+                    <option value="Firefox">
+                    <option value="chrome">
+                </datalist><br />
+                <input type="text" name="textfield" pattern="[A-Z][0-9]" /><br />
+                <input type="submit" value="add user" />
+            </fieldset>
+        </form>
+</body>
+</html>

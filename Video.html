@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>alu paddi</title>
+</head>
+<body>
+    <div>
+
+        <video id="v1" width="320" onmouseover="this.play()" onmouseout="this.pause()">
+            <source src="D:/Anime\The Promised Neverland\The Promised Neverland (Dub) Episode 012 - Watch The Promised Neverland (Dub) Episode 012 online in high quality.mp4"
+                    type="video/mp4" />
+        </video>
+        <button type="button" onclick="playPause()">play pause</button>
+        <button type="button" onclick="makeitbig()">big</button>
+        <button type="button" onclick="makeitsmall()">small</button>
+        <button type="button" onclick="makeitdefault()">default</button>
+        <br />
+        <video id="v1" width="320" controls>
+            <source src="D:/Anime\The Promised Neverland\The Promised Neverland (Dub) Episode 011 - Watch The Promised Neverland (Dub) Episode 011 online in high quality.mp4"
+                    type="video/mp4" />
+        </video>
+    </div>
+    <script>
+        var mvideo = document.getElementById("v1");
+        function playPause() {
+            if (mvideo.paused) {
+                mvideo.play();
+            } else {
+                mvideo.pause();
+            }
+        }
+        function makeitbig() {
+            mvideo.width = 440;
+        }
+        function makeitsmall() {
+            mvideo.width = 240;
+        }
+        function makeitdefault() {
+            mvideo.width = 320;
+        }
+    </script>
+</body>
+</html>
